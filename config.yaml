@@ -8,7 +8,7 @@ config:
 
   # Theme to use (located in res/themes)
   # Use the name of the folder as value
-  THEME: LandscapeEarth
+  THEME: Caliban
 
   # Hardware sensors reading
   # Choose the appropriate method for reading your hardware sensors:
@@ -22,8 +22,8 @@ config:
   # Linux/MacOS interfaces are named "eth0", "wlan0", "wlp1s0", "enp2s0"...
   # For Windows use the interfaces pretty name: "Ethernet 2", "Wi-Fi", ...
   # Leave the fields empty if the card does not exist on your setup
-  ETH: Ethernet   # Ethernet Card
-  WLO: Wi-Fi   # Wi-Fi Card
+  ETH: ''         # Ethernet Card
+  WLO: ''      # Wi-Fi Card
 
   # CPU fan
   # For Linux/MacOS platforms, the CPU fan is amongst all fan sensors gathered from the motherboard chipset

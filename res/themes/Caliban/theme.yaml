@@ -1,5 +1,5 @@
 ---
-author: "@mathoudebine"
+author: "@anotherlizwong"
 
 display:
   DISPLAY_ORIENTATION: landscape
@@ -13,212 +13,149 @@ static_images:
     WIDTH: 480
     HEIGHT: 320
 static_text:
-  DISK_USED_LABEL:
-    TEXT: "Used:"
-    X: 0
-    Y: 0
-    FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-    FONT_SIZE: 23
-    FONT_COLOR: 255, 255, 255
-    BACKGROUND_COLOR: 132, 154, 165
-  DISK_FREE_LABEL:
-    TEXT: "Free:"
-    X: 0
-    Y: 0
-    FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-    FONT_SIZE: 23
-    FONT_COLOR: 255, 255, 255
-    BACKGROUND_COLOR: 132, 154, 165
-  DISK_TOTAL_LABEL:
-    TEXT: "Total:"
-    X: 0
-    Y: 0
-    FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-    FONT_SIZE: 23
-    FONT_COLOR: 255, 255, 255
-    BACKGROUND_COLOR: 132, 154, 165
+  GPU_LABEL:
+    TEXT: "GPU"
+    X: 22
+    Y: 102
+    FONT: earth-2073/earth-2073.ttf
+    FONT_SIZE: 26
+    FONT_COLOR: 128, 255, 255
+    BACKGROUND_COLOR: 0, 0, 0
+  CPU_LABEL:
+    TEXT: "CPU"
+    X: 22
+    Y: 139
+    FONT: earth-2073/earth-2073.ttf
+    FONT_SIZE: 26
+    FONT_COLOR: 128, 255, 255
+    BACKGROUND_COLOR: 0, 0, 0
+  RAM_LABEL:
+    TEXT: "RAM"
+    X: 22
+    Y: 175
+    FONT: earth-2073/earth-2073.ttf
+    FONT_SIZE: 26
+    FONT_COLOR: 128, 255, 255
+    BACKGROUND_COLOR: 0, 0, 0
+  HDD_LABEL:
+    TEXT: "HDD"
+    X: 22
+    Y: 211
+    FONT: earth-2073/earth-2073.ttf
+    FONT_SIZE: 26
+    FONT_COLOR: 128, 255, 255
+    BACKGROUND_COLOR: 0, 0, 0
+  MISC_LABEL:
+    TEXT: "OXY"
+    X: 22
+    Y: 245
+    FONT: earth-2073/earth-2073.ttf
+    FONT_SIZE: 26
+    FONT_COLOR: 128, 255, 255
+    BACKGROUND_COLOR: 0, 0, 0
 STATS:
-  CPU:
-    PERCENTAGE:
-      INTERVAL: 1
-      TEXT:
-        SHOW: True
-        SHOW_UNIT: True
-        X: 0
-        Y: 0
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 23
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
-      GRAPH:
-        SHOW: True
-        X: 0
-        Y: 0
-        WIDTH: 150
-        HEIGHT: 15
-        MIN_VALUE: 0
-        MAX_VALUE: 100
-        BAR_COLOR: 0, 0, 255
-        BAR_OUTLINE: False
-        BACKGROUND_COLOR: 0, 0, 0
-    FREQUENCY:
-      INTERVAL: 5
-      TEXT:
-        SHOW: True
-        SHOW_UNIT: True
-        X: 0
-        Y: 0
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 30
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
-    TEMPERATURE:
-      INTERVAL: 5
-      TEXT:
-        SHOW: True
-        SHOW_UNIT: True
-        X: 154
-        Y: 24
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 23
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
   GPU:
     INTERVAL: 1
     PERCENTAGE:
       GRAPH:
         SHOW: True
-        X: 155
-        Y: 175
-        WIDTH: 150
-        HEIGHT: 15
+        X: 89
+        Y: 96
+        WIDTH: 304
+        HEIGHT: 29
         MIN_VALUE: 0
         MAX_VALUE: 100
         BAR_COLOR: 0, 0, 255
         BAR_OUTLINE: False
         BACKGROUND_COLOR: 0, 0, 0
-      TEXT:
-        SHOW: TRUE
-        SHOW_UNIT: True
-        X: 250
-        Y: 146
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 23
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
-    MEMORY:
-      TEXT:
-        SHOW: TRUE
-        SHOW_UNIT: True
-        X: 204
-        Y: 201
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 23
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
     TEMPERATURE:
       TEXT:
         SHOW: TRUE
         SHOW_UNIT: True
-        X: 154
-        Y: 146
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 23
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
+        X: 397
+        Y: 103
+        FONT: earth-2073/earth-2073.ttf
+        FONT_SIZE: 22
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_COLOR: 0, 0, 0
+  CPU:
+    PERCENTAGE:
+      INTERVAL: 5
+      GRAPH:
+        SHOW: True
+        X: 89
+        Y: 132
+        WIDTH: 303
+        HEIGHT: 29
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_COLOR: 0, 0, 255
+        BAR_OUTLINE: False
+        BACKGROUND_COLOR: 0, 0, 0
+    TEMPERATURE:
+      INTERVAL: 5
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 397
+        Y: 140
+        FONT: earth-2073/earth-2073.ttf
+        FONT_SIZE: 22
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_COLOR: 0, 0, 0
   MEMORY:
     INTERVAL: 5
     VIRTUAL:
       GRAPH:
         SHOW: True
-        X: 155
-        Y: 270
-        WIDTH: 150
-        HEIGHT: 15
+        X: 89
+        Y: 168
+        WIDTH: 303
+        HEIGHT: 29
         MIN_VALUE: 0
         MAX_VALUE: 100
         BAR_COLOR: 0, 0, 255
         BAR_OUTLINE: False
         BACKGROUND_COLOR: 0, 0, 0
       USED:
-        SHOW: TRUE
+        SHOW: False
         SHOW_UNIT: True
-        X: 204
+        X: 397
         Y: 296
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 23
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
+        FONT: earth-2073/earth-2073.ttf
+        FONT_SIZE: 22
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_COLOR: 0, 0, 0
       PERCENT_TEXT:
         SHOW: TRUE
         SHOW_UNIT: True
-        X: 250
-        Y: 246
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 23
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
+        X: 397
+        Y: 174
+        FONT: earth-2073/earth-2073.ttf
+        FONT_SIZE: 22
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_COLOR: 0, 0, 0
   DISK:
     INTERVAL: 10
     USED:
       GRAPH:
         SHOW: True
-        X: 155
-        Y: 0
-        WIDTH: 150
-        HEIGHT: 15
+        X: 89
+        Y: 204
+        WIDTH: 303
+        HEIGHT: 29
         MIN_VALUE: 0
         MAX_VALUE: 100
         BAR_COLOR: 0, 0, 255
         BAR_OUTLINE: False
         BACKGROUND_COLOR: 0, 0, 0
-      TEXT:
-        SHOW: TRUE
-        SHOW_UNIT: True
-        X: 204
-        Y: 0
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 23
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
-    TOTAL:
-      TEXT:
-        SHOW: TRUE
-        SHOW_UNIT: True
-        X: 204
-        Y: 0
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 23
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
-    FREE:
-      TEXT:
-        SHOW: TRUE
-        SHOW_UNIT: True
-        X: 204
-        Y: 0
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 23
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
-
-  DATE:
-    INTERVAL: 1
-    DAY:
+    TEMPERATURE:
       TEXT:
         SHOW: True
-        X: 155
-        Y: 6
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 10
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
-    HOUR:
-      TEXT:
-        SHOW: True
-        X: 250
-        Y: 6
-        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
-        FONT_SIZE: 10
-        FONT_COLOR: 255, 255, 255
-        BACKGROUND_COLOR: 132, 154, 165
+        SHOW_UNIT: True
+        X: 397
+        Y: 211
+        FONT: earth-2073/earth-2073.ttf
+        FONT_SIZE: 22
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_COLOR: 0, 0, 0
