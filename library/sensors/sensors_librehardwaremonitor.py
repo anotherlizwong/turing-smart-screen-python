@@ -70,7 +70,10 @@ handle.IsControllerEnabled = True  # For CPU Fan Speed
 handle.IsNetworkEnabled = True
 handle.IsStorageEnabled = True
 handle.IsPsuEnabled = False
-handle.Open()
+try:
+    handle.Open()
+except Exception as err:
+    logger.error("Could not complete handle.Open()", err)
 for hardware in handle.Hardware:
     if hardware.HardwareType == Hardware.HardwareType.Cpu:
         logger.info("Found CPU: %s" % hardware.Name)
