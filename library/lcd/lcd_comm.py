@@ -295,6 +295,7 @@ class LcdComm(ABC):
                            bar_color: Tuple[int, int, int] = (0, 0, 0),
                            bar_outline: bool = True,
                            background_color: Tuple[int, int, int] = (255, 255, 255),
+                           background_swap: bool = False,
                            background_image: str = None):
         # Generate a progress bar and display it
         # Provide the background image path to display progress bar with transparent background
@@ -333,7 +334,11 @@ class LcdComm(ABC):
         if bar_filled_width < 0:
             bar_filled_width = 0
         draw = ImageDraw.Draw(bar_image)
-        draw.rectangle([0, 0, bar_filled_width, height - 1], fill=bar_color, outline=bar_color)
+        if background_swap:
+            # Use the background image instead of the RGB fill
+            draw.rectangle([bar_filled_width, 0, width - 1, height - 1], fill=bar_color, outline=bar_color)
+        else:
+            draw.rectangle([0, 0, bar_filled_width, height - 1], fill=bar_color, outline=bar_color)
 
         if bar_outline:
             # Draw outline

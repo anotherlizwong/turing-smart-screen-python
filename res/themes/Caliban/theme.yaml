@@ -65,9 +65,10 @@ STATS:
         HEIGHT: 29
         MIN_VALUE: 0
         MAX_VALUE: 100
-        BAR_COLOR: 0, 0, 255
+        BAR_COLOR: 0, 0, 0
         BAR_OUTLINE: False
-        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: Static.jpg
+        BACKGROUND_SWAP: True
     TEMPERATURE:
       TEXT:
         SHOW: TRUE
@@ -89,9 +90,10 @@ STATS:
         HEIGHT: 29
         MIN_VALUE: 0
         MAX_VALUE: 100
-        BAR_COLOR: 0, 0, 255
+        BAR_COLOR: 0, 0, 0
         BAR_OUTLINE: False
-        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: Static.jpg
+        BACKGROUND_SWAP: True
     TEMPERATURE:
       INTERVAL: 5
       TEXT:
@@ -114,9 +116,10 @@ STATS:
         HEIGHT: 29
         MIN_VALUE: 0
         MAX_VALUE: 100
-        BAR_COLOR: 0, 0, 255
+        BAR_COLOR: 0, 0, 0
         BAR_OUTLINE: False
-        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: Static.jpg
+        BACKGROUND_SWAP: True
       USED:
         SHOW: False
         SHOW_UNIT: True
@@ -146,9 +149,10 @@ STATS:
         HEIGHT: 29
         MIN_VALUE: 0
         MAX_VALUE: 100
-        BAR_COLOR: 0, 0, 255
+        BAR_COLOR: 0, 0, 0
         BAR_OUTLINE: False
-        BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: Static.jpg
+        BACKGROUND_SWAP: True
     TEMPERATURE:
       TEXT:
         SHOW: True
